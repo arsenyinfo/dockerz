@@ -25,3 +25,4 @@ RUN pyenv global 3.6.6
 RUN pip install -U pip
 RUN pip install Cython
 RUN pip install numpy scipy pandas torch torchvision opencv-python-headless scikit-image scikit-video
+RUN pip install flake8 coverage pytest pytest-cov
