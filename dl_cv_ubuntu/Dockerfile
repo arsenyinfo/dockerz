@@ -3,7 +3,7 @@ FROM nvidia/cuda:10.0-base-ubuntu16.04
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get update && \
     apt-get -y install \
-        git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev \
+        git make cmake build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev \
         libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils \
         libffi-dev liblzma-dev
 
