@@ -26,3 +26,10 @@ RUN pip install -U pip
 RUN pip install Cython
 RUN pip install numpy scipy pandas torch torchvision opencv-python-headless scikit-image scikit-video
 RUN pip install flake8 coverage pytest pytest-cov
+
+# install dlib 
+RUN cd ~ && \
+    mkdir -p dlib && \
+    git clone -b 'v19.18' --single-branch https://github.com/davisking/dlib.git dlib/ && \
+    cd  dlib/ && \
+    python3 setup.py install --yes USE_AVX_INSTRUCTIONS
