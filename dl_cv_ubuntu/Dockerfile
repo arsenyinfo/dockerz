@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-base-ubuntu16.04
+FROM nvidia/cuda:10.0-devel-ubuntu16.04
 
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get update && \
